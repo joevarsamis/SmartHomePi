@@ -81,8 +81,8 @@ def setText_norefresh(text):
         count += 1
         bus.write_byte_data(DISPLAY_TEXT_ADDR,0x40,ord(c))
 #XIVELY API
-XIVELY_API_KEY = "TiHw3RkV3yTES7UsJl2zC8670CRAQq1HKcRaTZeAXFRD23JE"
-XIVELY_FEED_ID = "1767457191"
+XIVELY_API_KEY = "YOUR XIVELY API KEY"
+XIVELY_FEED_ID = "YOUR FEDD ID"
 api = xively.XivelyAPIClient(XIVELY_API_KEY)
 feed = api.feeds.get(XIVELY_FEED_ID)
 now = datetime.datetime.utcnow()
