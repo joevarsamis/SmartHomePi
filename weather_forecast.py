@@ -181,7 +181,7 @@ while True:
                 ]
                         feed.update()
                         time.sleep(1000)
-		if temp < 19.5  and currently.temperature > 15 :
+		elif temp < 19.5  and currently.temperature > 15 :
 			grovepi.digitalWrite(relay,0)
                         grovepi.digitalWrite(led1,0)
                         radiator = "OFF"
@@ -204,7 +204,7 @@ while True:
                 ]
                         feed.update()
                         time.sleep(1800)
-		if temp > 19.5  and currently.temperature > 15 :
+		elif temp > 19.5  and currently.temperature > 15 :
 			grovepi.digitalWrite(relay,0)
                         grovepi.digitalWrite(led1,0)
                         radiator = "OFF"
@@ -227,7 +227,7 @@ while True:
                 ]
                         feed.update()
                         time.sleep(1800)
-		if temp < 20.5  and currently.temperature < 11 :
+		elif temp < 20.5  and currently.temperature < 11 :
 			grovepi.digitalWrite(relay,1)
                         grovepi.digitalWrite(led1,1)
                         radiator = "ON"
@@ -250,7 +250,7 @@ while True:
                 ]
                         feed.update()
                         time.sleep(2000)
-		if temp < 20.5 and temp > 17  and currently.temperature > temp :
+		elif temp < 20.5 and temp > 17  and currently.temperature > temp :
 			grovepi.digitalWrite(relay,0)
                         grovepi.digitalWrite(led1,0)
                         radiator = "OFF"
@@ -273,7 +273,7 @@ while True:
                 ]
                         feed.update()
                         time.sleep(2000)
-		if currently.temperature > temp :
+		elif currently.temperature > temp :
 			grovepi.digitalWrite(relay,0)
                         grovepi.digitalWrite(led1,0)
                         radiator = "OFF"
@@ -296,7 +296,7 @@ while True:
                 ]
                         feed.update()
                         time.sleep(1800)
-		if temp < 19 and currently.temperature < 10	:
+		elif temp < 19 and currently.temperature < 10	:
                         grovepi.digitalWrite(relay,1)
                         grovepi.digitalWrite(led1,1)
                         radiator = "ON"
