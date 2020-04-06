@@ -166,7 +166,7 @@ while True :
                 #FORECASTIOPY API
                 setText("--FORECASTIOPY--"  "\n"  "-Weather Report-" )
                 time.sleep(5)
-                apikey = "90d3e695cf5f55650c4ffa88d012ca70"
+                apikey = "-----------YOUR API KEY FROM THINGSPEAK----------"
                 Larisa = [39.640984, 22.421268]
                 fio = ForecastIO.ForecastIO(apikey,
                         units=ForecastIO.ForecastIO.UNITS_SI,
